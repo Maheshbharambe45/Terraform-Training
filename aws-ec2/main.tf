@@ -1,8 +1,8 @@
 resource "aws_instance" "my-instance" {
-    ami = "ami-00af95fa354fdb788"
-    instance_type = "c7i-flex.large"
+  ami           = var.ami
+  instance_type = var.instance-type
 
-    tags = {
-      Name = "DemoServer"
-    }
+  tags = {
+    Name = "DemoServer"
+  }
 }
