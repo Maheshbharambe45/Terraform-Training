@@ -19,7 +19,7 @@ override.tf.json
 terraform.rc
 
 # Sensitive variable files
-*.tfvars
+# *.tfvars
 *.tfvars.json
 
 # Backup files created by editors
