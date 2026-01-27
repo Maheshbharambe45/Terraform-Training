@@ -1,18 +1,24 @@
-variable "ami_id" {
-  type = string
-  default = "ami-02b8269d5e85954ef"
+variable "instance_name" {
+  default = "My-EC2-Instance"
+  type    = string
 }
 
 variable "instance_type" {
-  type = string
   default = "t3.micro"
+  type    = string
 }
 
-variable "instance_name" {
-  type = string
-   default ="Terraform-instance"
+variable "ami_id" {
+  default = "ami-087d1c9a513324697"
+  type    = string
 }
 
-output "ec2_ip" {
+
+output "instance_ip" {
   value = aws_instance.this.public_ip
 }
+
+output "instance_arn" {
+  value = aws_instance.this.arn
+}
+

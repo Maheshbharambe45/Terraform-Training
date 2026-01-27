@@ -1,8 +1,14 @@
-variable "bucket_name" {
-  type = string
-  default = "heyyyyyy-mahiiiii45"
+variable "Bucket_name" {
+  default = "heyyyyyyy-shreeeeee"
+  type    = string
 }
 
-output "bucket_arn" {
+variable "Tag_name" {
+  default = "Shreeeeee"
+  type    = string
+}
+
+
+output "Bucket_arn" {
   value = aws_s3_bucket.this.arn
 }
